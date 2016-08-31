@@ -1,0 +1,60 @@
+body{
+    background-color: #A2DED0;
+}
+
+/*Font*/
+@font-face{
+    font-family: 'Doodle';
+    src: url('../fonts/Carolina_Valtuille.ttf');
+    
+}
+
+
+/*Navigation bar*/
+
+
+.navbar {
+    min-height: 3vh !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+color: black;  /*Sets the text hover color on navbar*/
+}
+
+
+  .navbar-default {
+    opacity: 0.5;
+    background-color: #4ECDC4;
+    border: none;
+}
+
+
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand  {
+   color: black; /*Change active text color here*/
+    }
+
+.navbar-nav > li > a, .navbar-default .navbar-brand{
+    padding-top:3vh !important; 
+    padding-bottom: 3vh !important;
+    font-size: 5vh;
+    font-family: Doodle;
+    opacity: 1;
+}
+
+/*About */
+.about-content{ 
+  /*For background*/
+  height:100vh;
+   background: url(../img/header.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: inherit;
+}
+
+.site-wrapper .site-wrapper-inner .site-wrapper-header{
+    
+}
+
