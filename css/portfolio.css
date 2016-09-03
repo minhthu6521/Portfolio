@@ -3,13 +3,6 @@ body{
     background-color: #A2DED0;
 }
 
-/*Font*/
-@font-face{
-    font-family: 'Doodle';
-    src: url('../fonts/Carolina_Valtuille.ttf');
-    
-}
-
 
 /*Navigation bar*/
 
@@ -23,7 +16,7 @@ color: black;  /*Sets the text hover color on navbar*/
 
 
 .navbar-default {
-    background-color: #4ECDC4;
+    background-color: rgba(155, 89, 182 , .5);
     border: none;
     transition: top 0.2s ease-in-out;
     -moz-transition: background .25s ease-in-out;
@@ -32,29 +25,49 @@ color: black;  /*Sets the text hover color on navbar*/
 
 
 
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand  {
-   color: black; /*Change active text color here*/
+.navbar-default .navbar-nav > li > a{
+   color: white; /*Change active text color here*/
     }
 
-.navbar-nav > li > a, .navbar-default .navbar-brand{
+.navbar-nav > li > a{
     padding-top:3vh !important; 
     padding-bottom: 3vh !important;
-    font-size: 5vh;
-    font-family: Doodle;
+    font-size: 3vh;
+    font-family:"Anton";
     opacity: 1;
     
+}
+
+.navbar-default .navbar-brand{
+    padding-top:3vh !important; 
+    padding-bottom: 3vh !important;
+    font-size: 4.5vh;
+    font-family:'Fredoka One', cursive;
+    color:black;
+    opacity: 1;
 }
 
 /*About */
 .about-content{ 
   padding-top: 10vh !important;
   margin-top: :120px;
-  height:100vh;
+  height:90vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: url(../img/header.jpg);
+  background: url('../img/header.jpg');
+}
+
+#about-content-content{
+  height:80vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Great Vibes', cursive;
+ font-size: 3vh;
+ color: white;
 }
 
 /*Progress bar*/
@@ -76,3 +89,4 @@ color: black;  /*Sets the text hover color on navbar*/
     /*transition: width 250ms ease-in-out;*/
     transition: width 5s ease-in-out;
 }
+
