@@ -32,13 +32,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Thu Nguyen</a>
+          <a class="navbar-brand" href="#about-content">Thu Nguyen</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SKILL</a></li>
-            <li><a href="#">CONTACT </a></li>
+            <li><a href="#about-content">ABOUT</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#contact">CONTACT </a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -59,16 +59,66 @@
             </div>
         </div>
     </div>
-    <div id ="skill">
+    <div id ="skill" class="div-content">
       <div class="container">
+          <div class="div-header">
+              SKILLS
+          </div>
           <div class="row">
               <div class="col-md-6 skill">
-                <div class="row">
+                <div class="row skill-content">
+                    <div class="col-md-4"> HTML5 / CSS3</div>
+                    <div class="col-md-8"><div class="progress-bar"><div class="progress-bar-fill" id="html-css" ></div></div></div>
+                </div>
+                <div class="row skill-content">
+                    <div class="col-md-4"> Javascript</div>
+                    <div class="col-md-8"><div class="progress-bar"><div class="progress-bar-fill" id="javascript"></div></div></div>
+                </div>
+                <div class="row skill-content">
+                    <div class="col-md-4"> Bootstrap</div>
+                    <div class="col-md-8"><div class="progress-bar"><div class="progress-bar-fill" id="bootstrap"></div></div></div>
+                </div>
+                <div class="row skill-content">
+                    <div class="col-md-4"> Photoshop </div>
+                    <div class="col-md-8"><div class="progress-bar"><div class="progress-bar-fill" id="photoshop"></div></div></div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 skill">
+                <div class="row skill-content">
+                    <div class="col-md-4">C#</div>
+                    <div class="col-md-8"><div class="progress-bar"><div class="progress-bar-fill" id="csharp" ></div></div></div>
+                </div>
+                <div class="row skill-content">
+                    <div class="col-md-4"> Java</div>
+                    <div class="col-md-8"><div class="progress-bar"><div class="progress-bar-fill" id="java"></div></div></div>
+                </div>
+                <div class="row skill-content">
+                    <div class="col-md-4"> SQL</div>
+                    <div class="col-md-8"><div class="progress-bar"><div class="progress-bar-fill" id="sql"></div></div></div>
+                </div>
+                <div class="row skill-content">
+                    <div class="col-md-4"> ASP.NET </div>
+                    <div class="col-md-8"><div class="progress-bar"><div class="progress-bar-fill" id="aspnet"></div></div></div>
                 </div>
               </div>
           </div>
+          <div class="row">
+           Something something something
+          </div>
       </div>
     </div>  
+      
+    <div id="contact" class="div-content">
+        <div class="container">
+            <div class="div-header">
+                CONTACT
+            </div>
+            <div>
+                At the moment I am currently looking for a internship/trainee position in Web Development (backend, frontend). Let's get contact if you want to work with me!
+            </div>
+        </div>
+    </div>
     
 
     <!-- Bootstrap core JavaScript
@@ -81,9 +131,47 @@
     <script>
         $(".navbar-fixed-top").autoHidingNavbar();
         
-        $('.progress-bar-fill').delay(1000).queue(function () {
-        $(this).css('width', '80%')
-    });
+        $(function() {
+	       var oTop = $('#skill').offset().top - window.innerHeight;
+            $(window).scroll(function(){
+    
+ 		       var pTop = $('body').scrollTop();
+    	       console.log( pTop + ' - ' + oTop );
+ 		       if( pTop > oTop ){
+                   $('#html-css').delay(1000).queue(function () {
+                   $(this).css('width', '85%')
+                   });
+                   
+                   $('#javascript').delay(1000).queue(function () {
+                   $(this).css('width', '75%')
+                   });
+                    
+                   $('#bootstrap').delay(1000).queue(function () {
+                   $(this).css('width', '80%')
+                   });
+                   
+                   $('#photoshop').delay(1000).queue(function () {
+                   $(this).css('width', '40%')
+                   });
+                   
+                   $('#csharp').delay(1000).queue(function () {
+                   $(this).css('width', '75%')
+                   });
+                   
+                   $('#java').delay(1000).queue(function () {
+                   $(this).css('width', '60%')
+                   });
+                   
+                   $('#aspnet').delay(1000).queue(function () {
+                   $(this).css('width', '60%')
+                   });
+                   
+                   $('#sql').delay(1000).queue(function () {
+                   $(this).css('width', '75%')
+                   });
+               }  
+	        });
+        });
         
     </script>
  
