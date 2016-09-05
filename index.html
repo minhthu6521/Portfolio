@@ -18,7 +18,7 @@
     <link href="css/portfolio.css" rel="stylesheet">
     
     <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Anton|Fredoka+One|Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Fredoka+One|Great+Vibes|Signika" rel="stylesheet">
       
   </head>
 
@@ -48,13 +48,14 @@
     <div class="about-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" id="about-content-content">
-                    Hi!
-                    <br/>
-                    I am a third year student in Haaga-Helia University. 
+                <div class="col-md-6" >
+                    <div id="about-content-content">
+                        Hi, my name is Thu Ngueyn msjhadisufhgiygewsfoiaieurf
+                    </div>         
                 </div>
-                <div class="col-md-6" id="about-button">
-                    
+                <div class="col-md-6 about-button" >   
+                        <div id="aboutMe">About me</div>
+                        <div id="education">Education</div>
                 </div>
             </div>
         </div>
@@ -173,6 +174,35 @@
 	        });
         });
         
+        /*var str = "<p>Hi! <br/> I am currently studying at Haaga-Helia University something somethi8ng something</p>",
+        i = 0,
+        isTag,
+        text;
+        
+        function typetext(str){
+            (function type() {
+            text = str.slice(0, ++i);
+            if (text === str) return;
+    
+            document.getElementById("about-content-content").innerHTML = text;
+
+            var char = text.slice(-1);
+            if( char === '<' ) isTag = true;
+            if( char === '>' ) isTag = false;
+
+            if (isTag) return type();
+            setTimeout(type, 80);
+        }())};
+        
+        typetext(str);
+        */
+        
+        $("#aboutMe").click(function(){
+            $("#about-content-content").html("Somerhiuahfiauhsiudhasudhi");
+        }); 
+        $("#education").click(function(){
+            $("#about-content-content").html("Aasdarjk <br \> oiauroahjoruih");
+        }); 
     </script>
  
 

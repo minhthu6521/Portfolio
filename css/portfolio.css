@@ -59,15 +59,46 @@ color: black;  /*Sets the text hover color on navbar*/
   background: url('../img/header.jpg');
 }
 
-#about-content-content{
+#about-content-content{ 
+  padding-top: 3vh;
   height:80vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   font-family: 'Great Vibes', cursive;
- font-size: 3vh;
- color: white;
+  font-size: 3vh;
+  color: white;
+}
+
+.about-button{
+    
+    font-family: 'Signika', sans-serif;
+}
+
+#aboutMe{
+    display: block;
+    background-image: url(../img/aboutMe.png);
+    background-size: contain;
+    height: 30vh;
+    width: 30vh;
+    padding-top: 11vh;
+    padding-left: 5vh;
+    cursor: pointer; cursor: hand;
+    font-size: 5vh;
+}
+
+#education{
+    display: block;
+    background-image: url(../img/Education.png);
+    background-size: contain;
+    height: 50vh;
+    width: 50vh;
+    margin-left: 20vh;
+    padding-top: 19vh;
+    padding-left: 7vh;
+    font-size: 8vh;
+    cursor: pointer; cursor: hand;
 }
 
 /*Page Content*/
@@ -83,6 +114,7 @@ color: black;  /*Sets the text hover color on navbar*/
     font-size: 2vh;
     margin-top: 5vh;
     margin-bottom: 3vh;
+    font-family: 'Signika', sans-serif;
 }
 
 /*Skill*/
