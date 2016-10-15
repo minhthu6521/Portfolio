@@ -1,4 +1,7 @@
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     background-color: #ecf0f1;
 }
@@ -7,7 +10,7 @@ body{
 /*Navigation bar*/
 
 .navbar {
-    min-height: 3vh !important;
+    min-height: 1vh !important;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -16,7 +19,7 @@ color: black;  /*Sets the text hover color on navbar*/
 
 
 .navbar-default {
-    background-color: rgba(155, 89, 182 , .6);
+    background-color: rgba(129,207,224,1);/*rgba(155, 89, 182 ,1)*/;
     border: none;
     transition: top 0.2s ease-in-out;
     -moz-transition: background .25s ease-in-out;
@@ -56,49 +59,53 @@ color: black;  /*Sets the text hover color on navbar*/
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: url('../img/header.jpg');
+  background: url('../img/header.png');
 }
 
 #about-content-content{ 
-  padding-top: 3vh;
-  height:80vh;
+  margin-top: 10vh;
+  padding-top: 10vh;
+  height:40vh;
+  text-align: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   font-family: 'Great Vibes', cursive;
   font-size: 3vh;
-  color: white;
+  color: black;
 }
 
-.about-button{
-    
+#about-button{
     font-family: 'Signika', sans-serif;
+    display: none;
+    text-align: center;
+    
 }
+
 
 #aboutMe{
     display: block;
-    background-image: url(../img/aboutMe.png);
-    background-size: contain;
-    height: 30vh;
-    width: 30vh;
-    padding-top: 11vh;
-    padding-left: 5vh;
     cursor: pointer; cursor: hand;
-    font-size: 5vh;
+    font-size: 3vh;
+    border: solid #BF55EC;
+    border-radius: 10px;
+    background-color: #BF55EC;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
 }
 
 #education{
     display: block;
-    background-image: url(../img/Education.png);
-    background-size: contain;
-    height: 50vh;
-    width: 50vh;
-    margin-left: 20vh;
-    padding-top: 19vh;
-    padding-left: 7vh;
-    font-size: 8vh;
+    font-size: 3vh;
     cursor: pointer; cursor: hand;
+    border: solid #BF55EC;
+    border-radius: 10px;
+    background-color: #BF55EC;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
 }
 
 /*Page Content*/
@@ -144,3 +151,94 @@ color: black;  /*Sets the text hover color on navbar*/
     -webkit-transition: width 5s ease-in-out;
 }
 
+
+
+
+/*Contact*/
+
+#email{   
+    background-color: #22A7F0;
+    text-align: center;
+    vertical-align: middle;
+    height: 4vh;
+    line-height: 4vh;
+    -webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+    cursor: pointer; cursor: hand;
+    -webkit-transition: all 1s ease; 
+    -moz-transition: all 1s ease; 
+    -ms-transition: all 1s ease; 
+    -o-transition: all 1s ease; 
+    transition: all 1s ease;
+}
+
+#email > a{
+    text-decoration: none;
+}
+
+#email:hover {
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25); 
+    -o-transform:scale(1.25); 
+     transform:scale(1.25);
+}
+
+
+/*Footer*/
+.footer{
+    height: 10vh;
+    background: blue;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px;
+    color:white;
+}
+
+#initial{
+    line-height: 10vh;
+    height: 10vh;
+}
+#quoteBox{
+    display: none;
+}
+
+
+
+/*For smaller screen size*/
+@media screen and (min-width:1024px){
+    #about-button {
+    display:block;
+    }
+    .navbar-default {
+    background-color: rgba(129,207,224,.6);
+    min-height: 3vh !important;
+    }
+    #quoteBox{
+        display: block;
+    }
+    #quote{
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #change-quote{
+        margin-top: -5vh;
+        float:right;
+        cursor:pointer;
+    }
+    .footer{
+    height: 20vh;
+    background: blue;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px;
+    color:white;
+    }
+
+    #initial{
+    line-height: 20vh;
+    height: 20vh;
+    }
+
+}

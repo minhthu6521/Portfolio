@@ -48,15 +48,22 @@
     <div class="about-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" >
-                    <div id="about-content-content">
-                        Hi, my name is Thu Ngueyn msjhadisufhgiygewsfoiaieurf
-                    </div>         
+                <div class="col-md-6">
+                    <div class="row" >
+                        <div class="col-md-12" id="about-content-content">
+                            Hi, my name is Thu Ngueyn msjhadisufhgiygewsfoiaieurferwwerwerwersdfsdfsdfsd
+                        </div> 
+                    </div>  
+                    <div class="row" id="about-button">
+                        <div class="col-md-4 col-md-offset-2">
+                            <div id="aboutMe">About me</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="education">Education</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 about-button" >   
-                        <div id="aboutMe">About me</div>
-                        <div id="education">Education</div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -105,7 +112,10 @@
               </div>
           </div>
           <div class="row">
-           Something something something
+              <div class="col-md-12">
+                  <br/>
+                  Somtehignasoidjhaoisjdoiasjdoiasjodiajso
+              </div>
           </div>
       </div>
     </div>  
@@ -115,12 +125,33 @@
             <div class="div-header">
                 CONTACT
             </div>
-            <div>
-                At the moment I am currently looking for a internship/trainee position in Web Development (backend, frontend). Let's get contact if you want to work with me!
+            <div class="row">
+                <div class="col-md-12">
+                    At the moment I am currently looking for a internship/trainee position in Web Development (backend, frontend). Let's get contact if you want to work with me!
+                </div>    
             </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-5" id="email">
+                    <a href="mailto:minhthu6521@gmail.com" target="_top"><span class="glyphicon glyphicon-envelope"></span> Email me</a>
+                </div>
+           </div>
         </div>
     </div>
     
+    <div class="footer div-content">
+        <div class="container">
+            <div class= "col-md-3" id ="initial">@Thu Nguyen 2016</div>
+            <div class="col-md-6 col-md-offset-3" id="quoteBox">
+                <div id="quote">
+                </div>
+                <div id = "text">
+                </div>
+                <div id="change-quote" class="standard" >
+                    New Quote
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -131,78 +162,6 @@
     <script src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
     <script>
         $(".navbar-fixed-top").autoHidingNavbar();
-        
-        $(function() {
-	       var oTop = $('#skill').offset().top - window.innerHeight;
-            $(window).scroll(function(){
-    
- 		       var pTop = $('body').scrollTop();
-    	       console.log( pTop + ' - ' + oTop );
- 		       if( pTop > oTop ){
-                   $('#html-css').delay(1000).queue(function () {
-                   $(this).css('width', '85%')
-                   });
-                   
-                   $('#javascript').delay(1000).queue(function () {
-                   $(this).css('width', '75%')
-                   });
-                    
-                   $('#bootstrap').delay(1000).queue(function () {
-                   $(this).css('width', '80%')
-                   });
-                   
-                   $('#photoshop').delay(1000).queue(function () {
-                   $(this).css('width', '40%')
-                   });
-                   
-                   $('#csharp').delay(1000).queue(function () {
-                   $(this).css('width', '75%')
-                   });
-                   
-                   $('#java').delay(1000).queue(function () {
-                   $(this).css('width', '60%')
-                   });
-                   
-                   $('#aspnet').delay(1000).queue(function () {
-                   $(this).css('width', '60%')
-                   });
-                   
-                   $('#sql').delay(1000).queue(function () {
-                   $(this).css('width', '75%')
-                   });
-               }  
-	        });
-        });
-        
-        /*var str = "<p>Hi! <br/> I am currently studying at Haaga-Helia University something somethi8ng something</p>",
-        i = 0,
-        isTag,
-        text;
-        
-        function typetext(str){
-            (function type() {
-            text = str.slice(0, ++i);
-            if (text === str) return;
-    
-            document.getElementById("about-content-content").innerHTML = text;
-
-            var char = text.slice(-1);
-            if( char === '<' ) isTag = true;
-            if( char === '>' ) isTag = false;
-
-            if (isTag) return type();
-            setTimeout(type, 80);
-        }())};
-        
-        typetext(str);
-        */
-        
-        $("#aboutMe").click(function(){
-            $("#about-content-content").html("Somerhiuahfiauhsiudhasudhi");
-        }); 
-        $("#education").click(function(){
-            $("#about-content-content").html("Aasdarjk <br \> oiauroahjoruih");
-        }); 
     </script>
  
 
